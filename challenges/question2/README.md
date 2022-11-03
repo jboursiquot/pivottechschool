@@ -38,3 +38,10 @@ product_id|inventory|updated_at
 ## Tasks
 
 Write a query to find the Lego sets which has the lowest inventory in our database and order them in descending order of updated_at.
+
+## Instructor's Recommendations
+
+The following are your instructor's recommendations on what you need to know and be comfortable with as concepts in order to successfully complete this challenge:
+
+- Know how to write SQL `SELECT` statements
+- Know how to join tables with `WHERE` or `INNER JOIN` statements

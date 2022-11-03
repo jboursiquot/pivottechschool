@@ -33,3 +33,12 @@ We have a monitoring service which regularly pings an inventory management servi
 1. Find the minimum, average and maximum query times by version.
 2. Find the best and worst performing releases.
 3. Using the health data, reconstruct the release history of the service.
+
+## Instructor's Recommendations
+
+The following are your instructor's recommendations on what you need to know and be comfortable with as concepts in order to successfully complete this challenge:
+
+- Know how to work with the `os` package to open files
+- Know how to use with `json` package to unmarshal your file contents into custom types
+- Know how to work with slices
+- You may need/want to work with the `time` package

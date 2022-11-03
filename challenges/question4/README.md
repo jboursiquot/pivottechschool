@@ -156,3 +156,12 @@ Errors:
 ## Tasks
 - Complete the methods in server.go to load data from the provided datastore and render appropriate response.
 - Ensure that your server passes all the supplied tests.
+
+## Instructor's Recommendations
+
+The following are your instructor's recommendations on what you need to know and be comfortable with as concepts in order to successfully complete this challenge:
+
+- Know how to write HTTP handlers
+- Know how to read request bodies and using the `json` package to unmarshal payloads
+- Know how to marshal JSON payloads back to a client
+- Know which HTTP status codes to return in difference circumstances
