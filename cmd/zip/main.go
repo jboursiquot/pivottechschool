@@ -2,9 +2,9 @@ package main
 
 import (
 	"database/sql"
-	"fmt"
 	"log"
 
+	"github.com/davecgh/go-spew/spew"
 	_ "github.com/mattn/go-sqlite3"
 )
 
@@ -21,18 +21,28 @@ func main() {
 	}
 	defer rows.Close()
 
+	type place struct {
+		id    int
+		code  string
+		city  string
+		state string
+	}
+
+	var places []place
+
 	for rows.Next() {
-		var id int
-		var code, city, state string
-		err = rows.Scan(&id, &code, &city, &state)
+		var p place
+		err = rows.Scan(&p.id, &p.code, &p.city, &p.state)
 		if err != nil {
 			log.Fatal(err)
 		}
-		fmt.Println(id, code, city, state)
+		places = append(places, p)
 	}
 	err = rows.Err()
 	if err != nil {
 		log.Fatal(err)
 	}
+
+	spew.Dump(places)
 
 }
